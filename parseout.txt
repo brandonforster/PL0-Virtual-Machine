@@ -1,0 +1,3 @@
+intsym identsym.1 commasym identsym.2 semicolonsym procsym identsym.3 semicolonsym intsym identsym.4 semicolonsym beginsym identsym.4 becomessym identsym.2 semicolonsym identsym.2 becomessym identsym.2 minussym numbersym.1 semicolonsym ifsym identsym.2 eqlsym numbersym.0 thensym identsym.1 becomessym numbersym.1 semicolonsym ifsym identsym.2 gtrsym numbersym.0 thensym callsym identsym.3 semicolonsym identsym.1 becomessym identsym.1 multsym identsym.4 semicolonsym endsym semicolonsym beginsym identsym.2 becomessym numbersym.3 semicolonsym callsym identsym.3 semicolonsym in identsym.1 semicolonsym endsym periodsym 
+
+No errors, program is syntactically correct

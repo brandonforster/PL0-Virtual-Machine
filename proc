@@ -1,0 +1,82 @@
+//For next Assignment
+/*
+if (token == procsym)
+{
+symbol newProc;
+jumpLocation[procedureLevel] = codeCounter;
+//emit a jump that we will edit later to skip all the declaration code
+emit(jmp, 0, 0);
+
+
+newProc.kind=3;
+
+//should be ident
+token= getToken();
+if (token != identsym)
+{
+printf("procedure declaration must be followed by identifier\n");
+system("PAUSE");
+exit(EXIT_FAILURE);
+
+}
+//this is the name of the proc
+token = getToken();
+
+newProc.name=token;
+newProc.addr= codeCounter;
+
+
+symbol_table[symbolCounter] = newProc;
+symbol_table[symbolCounter].level= currentLevel;
+symbolCounter++;
+
+
+//this should be the semicolon
+token= getToken();
+if (token != semicolonsym)
+{
+printf("Semicolon missing after procedure declaration\n");
+
+exit(EXIT_FAILURE);
+
+}
+//this is the first token after the declaration, the start of the function definition
+token= getToken();
+
+//incremement the lexeme counter because now we are looking at nested procedure declarations
+currentLevel++;
+procedureLevel++;
+
+//since we're working in a new procedure at this point, set the stack counter to zero. store
+//current stack value so we can get it back
+stackCounters[numLexemes] = stackCounter;
+numLexemes++;
+stackCounter= 0;
+
+//generate code for the procedure
+token= block(token);
+
+//now that we've generated code for this procedure, return to the actual stack values
+stackCounters[numLexemes]=0;
+numLexemes--;
+stackCounter= stackCounters[numLexemes];
+
+if (token != semicolonsym)
+{
+printf("Semicolon missing at end of procedure description\n");
+system("PAUSE");
+exit(EXIT_FAILURE);
+
+}
+//set up next token
+token= getToken();
+
+procedureLevel--;
+
+//edit the jump to skip it all
+code[jumpLocation[procedureLevel]].m = codeCounter;
+
+//decrement current level, we need to get out of the recursion
+currentLevel--;
+}
+*/
